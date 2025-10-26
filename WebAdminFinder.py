@@ -9,18 +9,11 @@ args = parse.parse_args()
 init(autoreset=True)
 colorsare = (Fore.YELLOW,Fore.GREEN,Fore.RED,Fore.BLUE,Fore.WHITE,Fore.MAGENTA,Fore.CYAN)
 print (colorsare[random.randint(0,6)] + Style.DIM + '''
- __    __  __    __  __       
-/  |  /  |/  |  /  |/  |      
-$$ |  $$ |$$ | /$$/ $$ |      
-$$ |  $$ |$$ |/$$/  $$ |      
-$$ |  $$ |$$  $$<   $$ |      
-$$ |  $$ |$$$$$  \  $$ |      
-$$ \__$$ |$$ |$$  \ $$ |_____ 
-$$    $$/ $$ | $$  |$$       |
- $$$$$$/  $$/   $$/ $$$$$$$$/   
+░▀▄▀▒▄▀▄░█▀▄▒▄▀▄
+░▒█▒░█▀█▒█▄▀░█▀█  
                                                                   ''')
 print(colorsare[random.randint(0,7)] + '''			
-Mpdifying by University of Kali Linux
+Mpdifying by Yad Omer Father of Kali Linux
 	''')
 payload = [
 "/admin/",
@@ -444,11 +437,11 @@ def searchpanel():
 				getrequest = requests.get(url + admin)
 				statuscode = str(getrequest.status_code)
 				if statuscode == "200":
-					print(url + admin + Fore.RED + "--> found!")
+					print(url + admin + Fore.RED + "--> دۆزرایەوە!")
 				elif statuscode == "403":
 					print(url + admin + "--> Forbidden")
 				elif statuscode == "404":
-					print(url + admin + Style.RESET_ALL + "--> Not Found :(")
+					print(url + admin + Style.RESET_ALL + "--> نەدۆزراوە :(")
 				elif statuscode == "302":
 					print(url + admin + "--> Redirecting -_-")
 				else: 
